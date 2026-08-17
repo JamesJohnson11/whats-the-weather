@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Code The Dream Prework</title>
+</head>
+
+<body>
+    <h1 class="title text-center mt-3">What's the Weather?</h1>
+    <div class="container rounded-box">
+        <form id="citySearch">
+            <input type="search" placeholder="Enter a city..." pattern=".*\S.*" title="Field cannot be empty or just spaces." required>
+            <div id="buttonContainer">
+                <button class="btn" id="currentWeather" type="submit">Today's Temperature</button>
+                <button class="btn" id="tenDayForecast" type="submit">10-Day Forecast</button>
+                <button class="btn" id="elevation" type="submit">Elevation</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="card-container" id="daily-forecast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
